@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bitcoin Wallet Balance Checker</title>
+  <script>
+    function getWalletBalance() {
+      const walletAddress = 'bc1qauj5crs5w28r7l000ze5k3fz7zfuka8e63zerh';
+      const apiUrl = `https://blockstream.info/api/address/${walletAddress}`;
+
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          const confirmedBalance = data.chain_stats.funded_txo_sum;
+          document.getElementById('balance').textContent = confirmedBalance;
+        })
+        .catch(error => {
+          console.error('Error retrieving balance:', error);
+        });
+    }
+  </script>
+</head>
+<body>
+  <h1>Bitcoin Wallet Balance</h1>
+  <button onclick="getWalletBalance()">Check Balance</button>
+  <p id="balance"></p>
+</body>
+</html>

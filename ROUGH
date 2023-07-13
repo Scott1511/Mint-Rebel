@@ -1,0 +1,15 @@
+<div class="form_container">
+
+            <div class="row">
+              <div class="col-lg-9 col-md-10 ml-auto">
+                <form action="">
+                  <div>
+                    <input type="text" placeholder="Your Name" />
+                  </div>
+                    <button>
+                      SEND
+                    </button>
+                </form>
+              </div>
+            </div>
+</div>

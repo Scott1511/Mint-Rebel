@@ -1,0 +1,93 @@
+body {
+    background-color: green;
+  }
+  
+  #console {
+    width: 400px;
+    height: 200px;
+    border: 0px solid black;
+    overflow: hidden;
+    padding: 5px;
+    font-family: monospace;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  #input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prompt {
+    margin-right: 5px;
+    font-family: monospace;
+    color: green;
+  }
+  
+  #input {
+    flex: 1;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 0;
+    outline: none;
+  }
+  
+  .input-entry {
+    margin-bottom: 5px;
+  }
+  
+  .valid-address {
+    display: flex;
+    align-items: center;
+    color: green;
+  }
+  
+  .valid-address .checkmark {
+    margin-right: 5px;
+    color: green;
+  }
+  
+  .invalid-address {
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+  }
+  
+  #key-container {
+    display: none;
+    margin-top: 10px;
+    overflow: auto;
+  }
+  
+  #key-element {
+    overflow: hidden;
+    white-space: pre;
+    background-color: black;
+    color: green;
+    font-family: monospace;
+    border: 1px solid green;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+  #command-container {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  #command-element {
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 0;
+    outline: none;
+  }
+  
